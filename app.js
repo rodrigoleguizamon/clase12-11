@@ -16,8 +16,13 @@ http.createServer((req, res) => {
 	switch (req.url) {
 		// Home
 		case '/':
-            res.end('home');
-			break;
+		
+		let content = 
+		´Bienvenido a DH Movie
+		Listado de peliculas´
+		
+		res.end('home');
+		break;
 		// En cartelera
 		case '/en-cartelera':
 			res.end('En cartelera');
